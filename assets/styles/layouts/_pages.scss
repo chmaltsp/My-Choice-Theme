@@ -1,0 +1,166 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $darkblue;
+}
+// COLORFUL BUTTONS
+.slider {
+    margin-top: ($line-height-computed);
+}
+.mc-btn {
+    margin-bottom: ($line-height-computed*2);
+    a {
+        color: $white;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    margin-top: 20px;
+    max-height: 200px;
+    color: $white;
+    height: 125px;
+    border-radius: 5px;
+    
+    img {
+        float: left;
+        margin-right: 15px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    h4 {
+        color: $white;
+        display: inline-block;
+        vertical-align: top;
+
+    }
+    p {
+        padding-right: 10px;
+        padding-bottom: 5px;
+        display: block;
+        font-size:13px;
+        line-height: 1.5;
+    }
+}
+// SVG INTERACTIVE MAP
+.map {
+    svg {
+        display: block;
+        margin: auto;
+    }
+    margin: auto;
+}
+
+.mapTooltip {
+    position: fixed;
+    background-color: #fff;
+    moz-opacity: 0.70;
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 200px;
+    display: none;
+    color: #343434;
+}
+
+//HOME PAGE BUTTONS STYLES
+#members {
+    @include setBgAndHover($blue);
+}
+
+#providers {
+    @include setBgAndHover($green);
+}
+
+// MEMBERS PAGE MC BUTTON STYLES
+#partnerBooklet {
+    @include setBgAndHover($green);
+}
+
+#memberHandbook {
+    @include setBgAndHover($green);
+}
+
+#memberRights {
+    @include setBgAndHover($blue);
+}
+
+#grievance {
+    @include setBgAndHover ($blue);
+}
+
+#selfSupport {
+    @include setBgAndHover ($darkblue);
+}
+
+#memberBenefits {
+    @include setBgAndHover ($darkblue);
+}
+// NEWS AND ANNOUCEMENTS STYLES
+.postbox {
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-bottom: $line-height-computed;
+    background-color: $lightgrey;
+    @include roundedBorder(5px);
+    img {
+        @include roundedBorder(5px);
+        height: 200px;
+    }
+}
+// ACCORDION STYLES
+#accordion {
+    padding: 0;
+    .panel-default {
+        margin-top: 0;
+    }
+    .panel-heading {
+        text-align: center;
+        background-color: $lighterblue;
+        color: white;
+    }
+    div.panel-body {
+
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// GOOGLE MAP STYLES
+#map-canvas {
+    
+    margin-bottom: 0;
+    
+    height: 400px;
+    width: 100%;
+    p{
+        margin: 0;
+    }
+   
+}
+//CONTACT FORM STYLES
+#contactContainer {
+    margin-bottom: ($line-height-computed * 3);
+    button {
+        float: none;
+        margin: auto;
+    }
+}
+// LAST ROW OF PAGE BOTTOM MARGIN
+.last {
+    margin-bottom: ($line-height-computed *2);
+}
+
+//Quick Links Page
+.list-group-item-heading {
+    color:$darkgray;
+}

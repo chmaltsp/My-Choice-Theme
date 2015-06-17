@@ -21,13 +21,19 @@ function setup() {
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage')
   ]);
+    $args = array(
+	
+	'default-image' => get_template_directory_uri() . '/assets/images/mc_logo_web.jpeg',
+);
+add_theme_support( 'custom-header', $args );
+    
 
   // Add post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
-
+ 
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);

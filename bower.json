@@ -8,9 +8,14 @@
   "private": true,
   "dependencies": {
     "modernizr": "2.8.2",
-    "bootstrap-sass-official": "3.3.4"
+    "bootstrap-sass-official": "3.3.4",
+    "raphael": "~2.1.4",
+    "jquery-mapael": "~1.0.1"
   },
   "overrides": {
+    "raphael" : {
+        "main": "./raphael.js"
+    },
     "modernizr": {
       "main": "./modernizr.js"
     },
@@ -36,5 +41,7 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
     }
+  },
+  "devDependencies": {
   }
 }

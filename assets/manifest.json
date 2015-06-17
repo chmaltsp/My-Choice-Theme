@@ -1,27 +1,37 @@
 {
-  "dependencies": {
-    "main.js": {
-      "files": [
-        "scripts/main.js"
-      ],
-      "main": true
-    },
-    "main.css": {
-      "files": [
+    "dependencies": {
+        "main.js": {
+            "main": true,
+            "files": [
+                "scripts/**/*",
+                "scripts/main.js"
+      ]
+
+            
+        },
+        "main.css": {
+            "files": [
         "styles/main.scss"
       ],
-      "main": true
-    },
-    "editor-style.css": {
-      "files": [
+            "main": true
+        },
+        "editor-style.css": {
+            "files": [
         "styles/editor-style.scss"
       ]
+        },
+        "jquery-mapael" : {
+            "bower": ["jquery-mapael"]
+        },
+        "modernizr.js": {
+            "bower": ["modernizr"]
+        },
+        "raphael.js": {
+            "bower": ["raphael"]
+        }
     },
-    "modernizr.js": {
-      "bower": ["modernizr"]
+
+    "config": {
+        "devUrl": "mychoice.localhost"
     }
-  },
-  "config": {
-    "devUrl": "http://example.dev"
-  }
 }
